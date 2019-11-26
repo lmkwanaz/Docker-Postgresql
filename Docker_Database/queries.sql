@@ -5,7 +5,7 @@ firstname VARCHAR (50),
 lastname VARCHAR (50), 
 Gender VARCHAR, 
 address VARCHAR(100), 
-phone INTEGER, 
+phone BIGINT, 
 email VARCHAR(100), 
 city VARCHAR(20), 
 country VARCHAR(50));
@@ -39,6 +39,12 @@ INSERT INTO customer VALUES(1, 'John', 'Hibert', 'Male', '284 chaucer st', 08478
 INSERT INTO customer VALUES( 2, 'Thando', 'Sithole', 'Female', '240 Sect 1', 0794445584, 'thando@gmail.com', 'Cape Town', 'South Africa');
 
 INSERT INTO customer VALUES(3 , 'Leon', 'Glen', 'Male', '81 Everton Rd,Gillits', 0820832830, 'Leon@gmail.com', 'Durban', 'South Africa');
+
+INSERT INTO customer VALUES(3 , 'Leon', 'Glen', 'Male', '81 Everton Rd,Gillits', 0820832830, 'Leon@gmail.com', 'Durban', 'South Africa');
+
+INSERT INTO customer VALUES(4, 'Charl', 'Muller', 'Male', '290A Dorset Ecke', +4485687, 'Charl.muller@yahoo.com', 'Berlin	Germany');
+
+INSERT INTO customer VALUES( 5, 'Julia', 'Stein', 'Female', '2 Wernerring', 44867258, 'Js234@yahoo.com', 'Frankfurt', 'Germany');
 
 
  customerid | firstname | lastname | gender |        address        |    phone     |         email          |     city     |   country    
@@ -248,8 +254,9 @@ firstname
 
 
 /*(16) -Using INNER JOIN create a query that selects all 'Payments' with 'Customer information' */
-       #= SELECT customer.customerID, customer.firstname, customer.lastname, customer.gender, customer.address, customer.phone, customer.email, customer.country, customer.city 
-       FROM customer INNER JOIN payments ON payments.customerid = customer.customerid; 
+       #= SELECT customer.customerID, customer.firstname, customer.lastname, customer.gender, customer.address, customer.phone,
+        customer.email, customer.country, customer.city 
+       FROM customer INNER JOIN payments ON payments.customerid = customer.customerid;  
 
  customerid | firstname | lastname | gender |     address      |    phone     |         email          |   country    |     city     
 ------------+-----------+----------+--------+------------------+--------------+------------------------+--------------+--------------
@@ -259,9 +266,9 @@ firstname
 
 
 /*(17) -Select all products that have turnable front wheels. */
-       #= SELECT * FROM products WHERE description > 'Turnable front wheels steering function'; 
+       #= SELECT * FROM products WHERE describtion > 'Turnable front wheels steering function'; 
 
-        productid | productname |               description                | buyprice 
+        productid | productname |               describtion                | buyprice 
 -----------+-------------+------------------------------------------+----------
          2 | Classic Car | Turnable front wheels, steering function |   550.75
          3 | Sports car  | Turnable front wheels, steering function |   700.60
