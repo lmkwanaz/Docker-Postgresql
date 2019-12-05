@@ -40,8 +40,6 @@ INSERT INTO customer VALUES( 2, 'Thando', 'Sithole', 'Female', '240 Sect 1', 079
 
 INSERT INTO customer VALUES(3 , 'Leon', 'Glen', 'Male', '81 Everton Rd,Gillits', 0820832830, 'Leon@gmail.com', 'Durban', 'South Africa');
 
-INSERT INTO customer VALUES(3 , 'Leon', 'Glen', 'Male', '81 Everton Rd,Gillits', 0820832830, 'Leon@gmail.com', 'Durban', 'South Africa');
-
 INSERT INTO customer VALUES(4, 'Charl', 'Muller', 'Male', '290A Dorset Ecke', +4485687, 'Charl.muller@yahoo.com', 'Berlin	Germany');
 
 INSERT INTO customer VALUES( 5, 'Julia', 'Stein', 'Female', '2 Wernerring', 44867258, 'Js234@yahoo.com', 'Frankfurt', 'Germany');
